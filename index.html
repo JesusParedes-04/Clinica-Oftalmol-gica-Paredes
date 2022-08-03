@@ -8,6 +8,7 @@
     <title>Nosotros</title>
     <link rel="shortcut icon" href="Images/Logo.png">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/08288d2c26.js" crossorigin="anonymous"></script>
 </head>
 
@@ -54,7 +55,6 @@
     </header>
 
     <main>
-
         <seccion class="bloqueSeccion">
             <div class="bloqueSeccion__img"></div>
 
@@ -204,61 +204,31 @@
 
 
         <!-- Valoraciones Slider -->
-        <section class=" contenedorValoraciones">
-            <h2>Testimonios de Nuestros pacientes</h2>
 
-            <div class="valoracion" id="testimonios">
-                <img class="valoracion__img" src="Images/5Stars.png" alt="estrellas">
-                <p class="valoracion__texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero vero
-                    autem consectetur ipsum natus
-                    distinctio ipsam velit neque expedita dicta dolorem sit quibusdam culpa optio esse incidunt
-                    doloremque,
-                    voluptas tenetur?
-                    Architecto sit consequuntur nobis necessitatibus? Iure perferendis autem aut vero quae pariatur
-                    sequi!
-                    Ut iusto, eaque rem tenetur voluptates repellendus magnam, omnis excepturi nihil debitis
-                    perferendis
-                    soluta, facere id incidunt!
-                    <br> <span> hugo valdez</span>
-                </p>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
 
-            </div>
+            <section class=" contenedorValoraciones">
+                <h2>Testimonios de Nuestros pacientes</h2>
 
-            <!-- <div class="valoracion">  
-                
-                <img class="valoracion__img" src="Images/5Stars.png" alt="estrellas" >
-                <p class="valoracion__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero vero autem consectetur ipsum natus
-                    distinctio ipsam velit neque expedita dicta dolorem sit quibusdam culpa optio esse incidunt
-                    doloremque,
-                    voluptas tenetur?
-                    Architecto sit consequuntur nobis necessitatibus? Iure perferendis autem aut vero quae pariatur
-                    sequi!
-                    Ut iusto, eaque rem tenetur voluptates repellendus magnam, omnis excepturi nihil debitis perferendis
-                    soluta, facere id incidunt!
+                <div class="valoracion" id="testimonios">
+                    <img class="valoracion__img" src="Images/5Stars.png" alt="estrellas">
+                    <p class="valoracion__texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero vero
+                        autem consectetur ipsum natus
+                        distinctio ipsam velit neque expedita dicta dolorem sit quibusdam culpa optio esse incidunt
+                        doloremque,
+                        voluptas tenetur?
+                        Architecto sit consequuntur nobis necessitatibus? Iure perferendis autem aut vero quae pariatur
+                        sequi!
+                        Ut iusto, eaque rem tenetur voluptates repellendus magnam, omnis excepturi nihil debitis
+                        perferendis
+                        soluta, facere id incidunt!
+                        <br> <span> hugo valdez</span>
+                    </p>
+            </section>
 
-             <br> <span> Marco Piñeiro </span> </p>
-            </div>
-
-            <div class= "valoracion">
-                
-                <img class="valoracion__img" src="Images/5Stars.png" alt="estrellas" style="width:100px">
-                <p class="valoracion__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero vero autem consectetur ipsum natus
-                    distinctio ipsam velit neque expedita dicta dolorem sit quibusdam culpa optio esse incidunt
-                    doloremque,
-                    voluptas tenetur?
-                    Architecto sit consequuntur nobis necessitatibus? Iure perferendis autem aut vero quae pariatur
-                    sequi!
-                    Ut iusto, eaque rem tenetur voluptates repellendus magnam, omnis excepturi nihil debitis perferendis
-                    soluta, facere id incidunt!
-
-             <br> <span>Juan de la Torre </span> </p>
-            </div> -->
-
-
-
-        </section>
         </div>
+
     </main>
 
     <footer>
@@ -298,6 +268,13 @@
         <p class="footerLegal">Vision Center S.A. © 2022</p>
 
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 
