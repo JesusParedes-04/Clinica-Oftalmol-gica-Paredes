@@ -101,6 +101,11 @@ body {
 
 }
 
+.navLink:hover{
+
+    text-decoration: underline;
+}
+
 /* -----------------------------------------------------------------------------------Seccion Carrusel Index------------------------------------------------------------------------------------- */
 
 .carousel-item {
@@ -1374,6 +1379,7 @@ opacity: 80%;
     background-color: #4586BF;
     padding: 4rem;
     border-radius: 10px;
+    align-items: center;
 }
 
 .styleRow h2 {
@@ -1382,6 +1388,11 @@ opacity: 80%;
     text-align: center;
 }
 
+.btnFont h5{
+
+font-weight: bold;
+
+}
 
 @media (min-width:769px) and (max-width: 1024px) {
 
