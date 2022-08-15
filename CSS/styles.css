@@ -104,15 +104,8 @@ body {
 
 /* -----------------------------------------------------------------------------------Seccion Carrusel Index------------------------------------------------------------------------------------- */
 
-.containerCar__img{
-background-image: url(/Images/Slider2.jpeg);
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-
 .carousel-item {
-    min-height: 70vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position:  center right;
     background-size: cover;
