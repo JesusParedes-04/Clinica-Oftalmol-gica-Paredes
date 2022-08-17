@@ -1,0 +1,32 @@
+.navbarBg {
+    background-color: rgba(245, 245, 245, 0.903);
+}
+
+.navbarBg__logo {
+    width: 85px;
+
+}
+
+.navLink {
+    margin-left: 20px;
+    text-decoration: none;
+    font-family:  'Mukta', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #4586bf;
+
+    &:hover{  
+        text-decoration: underline;                              
+    }
+}
+
+.navLink:visited {
+
+    color: #4586bf;
+}
+
+
+
+
+

@@ -1,0 +1,41 @@
+.whatsaapIcon {
+    display: flex;
+    flex-direction: row-reverse;
+    position: sticky;
+    bottom: 40px;
+    left: 18rem;
+    z-index: 0;
+}
+
+
+.fa-square-whatsapp {
+    color: #25D366;
+
+}
+
+.fa-4x {
+    font-size: 4em;
+}
+
+@media (min-width:769px) and (max-width:1024) {
+
+
+    .whatsaapIcon {
+        bottom: 70px;
+    }
+
+}
+
+@media (min-width:1025px) {
+
+    .whatsaapIcon {
+        bottom: 70px;
+    }
+
+}
+
+
+.bloqueFooter__RRSS .icons {
+    color: #4586bf;
+    margin: 0 auto;
+  }

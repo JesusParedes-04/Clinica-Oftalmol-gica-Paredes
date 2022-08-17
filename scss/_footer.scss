@@ -1,0 +1,170 @@
+footer {
+  background-color:  #4586bf;
+}
+
+.bloqueFooter {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  align-items: center;
+  justify-content: center;
+
+  .bloqueFooter__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bloqueFooter__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .bloqueFooter__RRSS {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bloqueFooter__mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+.bloqueFooter__logo img {
+  width: 30%;
+  margin: 10px;
+}
+
+
+
+.bloqueFooter__contacto h3 {
+  color:#4586bf;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.bloqueFooter__RRSS h3 {
+  color: #4586bf;
+  text-transform: capitalize;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bloqueFooter__contacto p {
+  color:  #4586bf;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footerLegal {
+  text-align: center;
+  padding: 10px;
+  color:  #F5F5F5;
+  text-transform: uppercase;
+  font-family:  'Mukta', sans-serif;
+  font-size: 10px;
+  margin: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bloqueFooter {
+    display: grid;
+    grid-template-areas: "logo""info""mapa""infoplus";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+
+    .bloqueFooter__contacto {
+      margin: 0;
+    }
+
+    .bloqueFooter__RRSS {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .bloqueFooter__mapa {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .bloqueFooter__contacto h3 {
+    font-size: 18px;
+  }
+
+  .bloqueFooter__contacto p {
+    font-size: 16px;
+  }
+
+  .bloqueFooter__RRSS h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footerLegal {
+    font-size: 14px;
+  }
+
+  .bloqueFooter__mapa iframe {
+    width: 40vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .bloqueFooter {
+    display: grid;
+    grid-template-areas: "logo""info""mapa""infoplus";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+
+
+    .bloqueFooter__RRSS {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bloqueFooter__mapa {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .bloqueFooter__contacto h3 {
+    font-size: 20px;
+  }
+
+  .bloqueFooter__contacto p {
+    font-size: 18px;
+  }
+
+  .bloqueFooter__RRSS h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footerLegal {
+    font-size: 16px;
+  }
+
+  .bloqueFooter__mapa iframe {
+    width: 40vh;
+  }
+}
