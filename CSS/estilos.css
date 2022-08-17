@@ -152,7 +152,7 @@ footer {
     width: 40vh; } }
 
 .carousel-item {
-  min-height: 100vh;
+  min-height: 70vh;
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;
