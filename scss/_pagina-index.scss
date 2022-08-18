@@ -13,8 +13,8 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.647);
     filter: blur(30px);
-}
 
+}
 
 .carouselInfo {
     position: absolute;
@@ -22,101 +22,36 @@
     width: 60%;
     height: 100%;
 
+    h1 {
+        margin-left: 20px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: $color-primario;
+        font-family: $fuente-Secundaria;
+        margin-bottom: 8px;
+        font-size: 28px;
+        font-style: Bolder;
+    }
+
     .carouselInfo__btn {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-top: 10px;
         gap: 10px;
-    }
-}
 
-.carouselInfo h1 {
-    margin-left: 20px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    color: var(--color-primario);
-    font-family: var(--fuente-Secundaria);
-    margin-bottom: 8px;
-    font-size: 28px;
-    font-style: Bolder;
-}
+        button {
 
-.carouselInfo__btn button {
-
-    color: var(--color-primario);
-    border: none;
-    padding: 5px;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-
-@media (min-width:769px) and (max-width:1024px) {
-
-    .carouselInfo {
-        width: 25%;
-
-        .carouselInfo__btn {
-            margin-left: 60px;
-            margin-top: 20px;
-            gap: 20px;
+            color: $color-primario;
+            border: none;
+            padding: 5px;
+            border-radius: 8px;
+            font-size: 16px;
         }
 
     }
 
-    .carouselInfo h1 {
-        margin-left: 30px;
-        margin-top: 20px;
-        text-transform: uppercase;
-        color: var(--color-primario);
-        font-family: var(--fuente-Secundaria);
-        margin-bottom: 8px;
-        font-size: 34px;
-        font-style: Bolder;
-
-    }
-
-    .carouselInfo__btn {
-        margin-left: 30px;
-        margin-top: 20px;
-        gap: 15px;
-
-    }
-
-    .carouselInfo__btn button {
-
-        font-size: 18px;
-
-    }
-}
-
-@media(min-width:1025px) {
-
-
-    .carouselInfo {
-        width: 24%;
-    }
-
-    .carouselInfo h1 {
-        margin-left: 60px;
-        margin-top: 50px;
-        text-transform: uppercase;
-        color: var(--color-primario);
-        font-family: var(--fuente-Secundaria);
-        margin-bottom: 8px;
-        font-size: 38px;
-        font-style: Bolder;
-
-    }
-
-    .carouselInfo__btn button {
-
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 20px;
-    }
 
 }
 
@@ -134,7 +69,7 @@
     .infoNosotros__texto h2 {
         text-transform: uppercase;
         color: #4586BF;
-        font-family: var(--fuente-Secundaria);
+        font-family: $fuente-Secundaria;
         margin-bottom: 25px;
         font-size: 20px;
     }
@@ -143,7 +78,7 @@
 
         text-transform: uppercase;
         color: #4586BF;
-        font-family: var(--fuente-Secundaria);
+        font-family: $fuente-Secundaria;
         margin-bottom: 25px;
         font-size: 20px;
     }
@@ -171,7 +106,6 @@
     }
 
 
-
     .infoNosotros__img2 img {
         object-fit: cover;
         border-radius: 10px;
@@ -182,113 +116,10 @@
 
 }
 
-@media (min-width:769px) and (max-width:1024px) {
-
-    .infoNosotros {
-        display: grid;
-        grid-area: "texto""imagen"
-            "texto""imagen";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 30px;
-        column-gap: 30px;
-        margin-top: 50px;
-        margin-left: 30px;
-        margin-right: 30px;
-
-        .infoNosotros__texto p {
-
-            font-size: 18px;
-        }
-
-        .infoNosotros__texto h2 {
-
-            font-size: 22px;
-            margin-bottom: 27px;
-
-        }
-
-        .infoNosotros__texto2 h2 {
-
-            margin-bottom: 27px;
-            font-size: 22px;
-
-        }
-
-        .infoNosotros__texto2 p {
-
-            margin-top: 25px;
-            margin-bottom: 25px;
-            font-size: 18px;
-        }
-
-
-        .infoNosotros__img2 {
-
-            grid-column: 1/2;
-            grid-row: 2/4;
-        }
-    }
-
-}
-
-
-@media (min-width:1025px) {
-
-
-    .infoNosotros {
-        display: grid;
-        grid-area: "texto""imagen"
-            "texto""imagen";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 35px;
-        column-gap: 35px;
-        margin-top: 50px;
-        margin-left: 60px;
-        margin-right: 60px;
-
-
-        .infoNosotros__texto h2 {
-
-            font-size: 24px;
-            margin-bottom: 29px;
-        }
-
-        .infoNosotros__texto p {
-
-            font-size: 20px;
-        }
-
-        .infoNosotros__texto2 h2 {
-
-            margin-bottom: 29px;
-            font-size: 24px;
-
-        }
-
-
-        .infoNosotros__texto2 p {
-
-            font-size: 20px;
-        }
-
-
-        .infoNosotros__img2 {
-
-            grid-column: 1/2;
-            grid-row: 2/4;
-        }
-
-    }
-
-}
-
-
 /* -----------------------------------------------------------------------------Valoraciones ------------------------------------------------------*/
 .contenedorValoraciones h2 {
     color: #4586BF;
-    font-family: var(--fuente-Secundaria);
+    font-family: $fuente-Secundaria;
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
@@ -313,7 +144,7 @@
 
 .valoracion__texto p {
     color: white;
-    font-family: var(--fuente-principal);
+    font-family: $fuente-principal;
     font-size: 16px;
     margin: 35px 15px;
     text-align: left;
@@ -327,41 +158,4 @@
     font-style: italic;
     text-transform: capitalize;
     margin-top: 5px;
-}
-
-@media (min-width:769px) and (max-width:1024px) {
-
-    .contenedorValoraciones h2 {
-        margin-top: 25px;
-        font-size: 22px;
-    }
-
-    .valoracion {
-        max-height: 140px;
-
-    }
-
-    .valoracion__texto p {
-        font-size: 18px;
-    }
-
-
-}
-
-@media (min-width:1025px) {
-
-    .contenedorValoraciones h2 {
-        margin-top: 25px;
-        font-size: 24px;
-    }
-
-    .valoracion {
-        max-height: 150px;
-    }
-
-
-    .valoracion__texto p {
-        font-size: 20px;
-    }
-
 }

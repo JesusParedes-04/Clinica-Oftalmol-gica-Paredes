@@ -4,7 +4,7 @@
 @import "footer";
 @import "pagina-index";
 @import "icon";
-
+@import "mediaqueries";
 
 
 
@@ -53,7 +53,7 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: large;
-    color: var(--color-primario);
+    color: $color-primario;
 }
 
 .formulario__label {
@@ -66,12 +66,12 @@
 
 
 .formulario__label__hijo {
-    color: var(--color-primario);
+    color:$color-primario;
     margin-bottom: 5px;
     margin-top: 5px;
     text-transform: capitalize;
     font-weight: 500;
-    font-family: var(--fuente-Secundaria);
+    font-family: $fuente-Secundaria;
 
 }
 
@@ -112,9 +112,9 @@
     padding: 8px;
     border-radius: 5px;
     border-style: none;
-    background-color: var(--color-primario);
+    background-color: $color-primario;
     color: white;
-    font-style: var(--fuente-Secundaria);
+    font-style: $fuente-Secundaria;
     text-transform: uppercase;
     font-weight: 600;
 
@@ -189,7 +189,7 @@
 }
 
 .containerEspecialidad h1 {
-    color: var(--color-primario);
+    color: $color-primario;
     text-transform: uppercase;
     margin-top: 100px;
     margin-bottom: 30px;
@@ -225,7 +225,7 @@
 }
 
 .bloqueEspecialidad__info h2 {
-    background-color: var(--color-primario);
+    background-color:$color-primario;
     text-align: center;
     padding: 15px;
     text-transform: uppercase;
@@ -438,8 +438,8 @@
 
 .contenedorOS__bg__titulo h1 {
 
-    color: var(--color-primario);
-    font-family: var(--fuente-Secundaria);
+    color:$color-primario;
+    font-family:$fuente-Secundaria;
     text-transform: uppercase;
     color: white;
     text-align: center;
@@ -587,8 +587,8 @@
 .containerStaff h1 {
 
     text-align: center;
-    color: var(--color-primario);
-    font-family: var(--fuente-principal);
+    color:$color-primario;
+    font-family: $fuente-principal;
     margin-top: 160px;
     margin-bottom: 60px;
     text-transform: uppercase;
@@ -633,7 +633,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: var(--color-primario);
+    background-color:$color-primario;
     transition: .5s all;
     border-radius: 10px;
     opacity: 0.8;

@@ -19,12 +19,14 @@
     &:hover{  
         text-decoration: underline;                              
     }
+
+    &:visited {
+        color: #4586bf;
+    }
+    
+
 }
 
-.navLink:visited {
-
-    color: #4586bf;
-}
 
 
 

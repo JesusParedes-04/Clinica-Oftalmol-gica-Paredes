@@ -1,11 +1,10 @@
 
 $fuente-principal: 'Mukta', sans-serif;
 $fuente-Secundaria: 'Fira Sans Condensed', sans-serif;
-$color-secundario: rgba(245, 245, 245, 70%);
+$color-secundario: #f5f5f5B3;
 $color-primario: #4586bf;
-$color-extra: #F5F5F5;
-$color-tarjeta: #4586bfd7;
-
+$color-blanco: #F5F5F5;
+$color-blue-transparente: #4586bfd7;
 
 * {
     padding: 0;
@@ -15,16 +14,15 @@ $color-tarjeta: #4586bfd7;
 
 a {
     text-decoration: none;
-    color: var(--color-extra);
+    color: $color-blanco;
 }
 
 
 li {
     list-style: none;
-
 }
 
 body {
-    font-family: 'Mukta', sans-serif;
+    font-family: $fuente-principal;
 }
 
