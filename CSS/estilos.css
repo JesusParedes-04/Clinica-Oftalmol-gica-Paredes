@@ -206,26 +206,26 @@ footer {
     font-family: "Fira Sans Condensed", sans-serif;
     margin-bottom: 25px;
     font-size: 20px; }
-  .infoNosotros .infoNosotros__texto2 h2 {
-    text-transform: uppercase;
-    color: #4586BF;
-    font-family: "Fira Sans Condensed", sans-serif;
-    margin-bottom: 25px;
-    font-size: 20px; }
-  .infoNosotros .infoNosotros__texto p {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 16px; }
-  .infoNosotros .infoNosotros__texto2 p {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 16px; }
+    .infoNosotros .infoNosotros__texto h2 p {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-size: 16px; }
   .infoNosotros .infoNosotros__img img {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 20px;
     width: 100%;
     height: 100%; }
+  .infoNosotros .infoNosotros__texto2 h2 {
+    text-transform: uppercase;
+    color: #4586BF;
+    font-family: "Fira Sans Condensed", sans-serif;
+    margin-bottom: 25px;
+    font-size: 20px; }
+  .infoNosotros .infoNosotros__texto2 p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 16px; }
   .infoNosotros .infoNosotros__img2 img {
     object-fit: cover;
     border-radius: 10px;
@@ -243,32 +243,29 @@ footer {
   margin-top: 15px;
   margin-bottom: 25px; }
 
-.valoracion {
+.contenedorValoraciones .valoracion {
   max-height: 220px;
   background-color: #4586BF;
   border-radius: 10px; }
-
-.valoracion__texto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: auto; }
-
-.valoracion__texto p {
-  color: white;
-  font-family: "Mukta", sans-serif;
-  font-size: 16px;
-  margin: 35px 15px;
-  text-align: left; }
-
-.valoracion__cita {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-style: italic;
-  text-transform: capitalize;
-  margin-top: 5px; }
+  .contenedorValoraciones .valoracion .valoracion__texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; }
+    .contenedorValoraciones .valoracion .valoracion__texto p {
+      color: white;
+      font-family: "Mukta", sans-serif;
+      font-size: 16px;
+      margin: 35px 15px;
+      text-align: left; }
+      .contenedorValoraciones .valoracion .valoracion__texto p .valoracion__cita {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-style: italic;
+        text-transform: capitalize;
+        margin-top: 5px; }
 
 .whatsaapIcon {
   display: flex;
@@ -331,7 +328,7 @@ footer {
       margin-left: 55px;
       margin-top: 20px;
       gap: 15px; }
-      .carouselInfo .carouselInfo__btn button {
+      .carouselInfo .carouselInfo__btn .carouselInfo__btn button {
         padding: 10px;
         border-radius: 10px;
         font-size: 20px; } }
@@ -349,9 +346,6 @@ footer {
     margin-right: 30px; }
     .infoNosotros .infoNosotros__texto p {
       font-size: 18px; }
-    .infoNosotros .infoNosotros__texto h2 {
-      font-size: 22px;
-      margin-bottom: 27px; }
     .infoNosotros .infoNosotros__texto2 h2 {
       margin-bottom: 27px;
       font-size: 22px; }
@@ -392,133 +386,21 @@ footer {
   .contenedorValoraciones h2 {
     margin-top: 25px;
     font-size: 22px; }
-  .valoracion {
+  .contenedorValoraciones .valoracion {
     max-height: 140px; }
-  .valoracion__texto p {
-    font-size: 18px; } }
+    .contenedorValoraciones .valoracion .valoracion__texto p {
+      font-size: 18px; } }
 
 @media (min-width: 1025px) {
   .contenedorValoraciones h2 {
     margin-top: 25px;
     font-size: 24px; }
-  .valoracion {
+  .contenedorValoraciones .valoracion {
     max-height: 150px; }
-  .valoracion__texto p {
-    font-size: 20px; } }
+    .contenedorValoraciones .valoracion .valoracion__texto p {
+      font-size: 20px; } }
 
 /*----------------------------------------------------------------- pagina contacto------------------------------------------------------------- */
-.contenedorContacto {
-  background-image: url(../Images/Fondo-contacto.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  max-width: 100%; }
-
-.formulario {
-  background-color: whitesmoke;
-  border-radius: 10px;
-  margin: 230px auto;
-  width: 90%; }
-
-.formulario__label__input {
-  padding: 5px;
-  font-size: 12px; }
-
-.formulario__label__input .formulario__textarea {
-  width: 50%; }
-
-.pruebaflex {
-  display: flex;
-  flex-direction: row; }
-
-.formulario__fieldset {
-  padding: 12px;
-  border-style: none;
-  margin: 10px auto; }
-
-.formulario__legend {
-  font-family: 'Mukta', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: large;
-  color: #4586bf; }
-
-.formulario__label {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.formulario__label__hijo {
-  color: #4586bf;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-family: "Fira Sans Condensed", sans-serif; }
-
-.formulario__label__input {
-  border-radius: 5px;
-  padding: 10px;
-  border-style: none;
-  width: 100%;
-  font-size: 16px; }
-
-.formulario__textarea {
-  border-radius: 5px;
-  margin-bottom: 5px;
-  width: 100%; }
-
-.contenedorBtn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-.contenedorBtn__hijo {
-  margin-top: 8px;
-  margin-left: 8px;
-  margin-right: 8px; }
-
-.contenedorBtn__boton {
-  padding: 8px;
-  border-radius: 5px;
-  border-style: none;
-  background-color: #4586bf;
-  color: white;
-  font-style: "Fira Sans Condensed", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600; }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .formulario {
-    width: 80%; }
-  .formulario__legend {
-    font-size: 20px; }
-  .formulario__label__hijo {
-    font-size: 20px; }
-  .formulario__label__input {
-    padding: 5px; }
-  .contenedorBtn__boton {
-    font-size: 16px; } }
-
-@media (min-width: 1025px) {
-  .formulario {
-    background-color: whitesmoke;
-    border-radius: 10px;
-    margin: 230px auto;
-    width: 70%; }
-  .formulario__label__hijo {
-    font-size: 20px;
-    margin: 10px 0; }
-  .contenedorBtn__boton {
-    padding: 18px;
-    font-size: 16px; }
-  .formulario__legend {
-    font-size: 24px;
-    margin-top: 10px; } }
-
 /* ----------------------------------------------------Pagina Especialidades---------------------------------------------------------------------- */
 .containerEspecialidad {
   display: flex;

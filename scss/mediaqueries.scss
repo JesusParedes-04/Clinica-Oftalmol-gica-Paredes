@@ -1,4 +1,4 @@
-//------------------------------------------------------------------ pagina index----------------------------------------------------------
+//------------------------------------------------------------------Sección Carrusel----------------------------------------------------------
 
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -54,7 +54,7 @@
             margin-top: 20px;
             gap: 15px;
 
-            button {
+            .carouselInfo__btn button {
                 padding: 10px;
                 border-radius: 10px;
                 font-size: 20px;
@@ -64,6 +64,9 @@
 
     }
 }
+
+
+//------------------------------------------------------------------Sección Info----------------------------------------------------------
 
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -80,32 +83,32 @@
         margin-left: 30px;
         margin-right: 30px;
 
-        .infoNosotros__texto p {
+        .infoNosotros__texto {
 
-            font-size: 18px;
+            p {
+
+                font-size: 18px;
+            }
         }
 
-        .infoNosotros__texto h2 {
+        .infoNosotros__texto2 {
 
-            font-size: 22px;
-            margin-bottom: 27px;
+            h2 {
 
+
+                margin-bottom: 27px;
+                font-size: 22px;
+
+
+            }
+
+            p {
+
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 18px;
+            }
         }
-
-        .infoNosotros__texto2 h2 {
-
-            margin-bottom: 27px;
-            font-size: 22px;
-
-        }
-
-        .infoNosotros__texto2 p {
-
-            margin-top: 25px;
-            margin-bottom: 25px;
-            font-size: 18px;
-        }
-
 
         .infoNosotros__img2 {
 
@@ -133,30 +136,35 @@
         margin-right: 60px;
 
 
-        .infoNosotros__texto h2 {
+        .infoNosotros__texto {
 
-            font-size: 24px;
-            margin-bottom: 29px;
+            h2 {
+
+                font-size: 24px;
+                margin-bottom: 29px;
+            }
+
+            p {
+
+                font-size: 20px;
+            }
         }
 
-        .infoNosotros__texto p {
+        .infoNosotros__texto2 {
+            h2 {
 
-            font-size: 20px;
+                margin-bottom: 29px;
+                font-size: 24px;
+
+            }
+
+
+            p {
+
+                font-size: 20px;
+            }
+
         }
-
-        .infoNosotros__texto2 h2 {
-
-            margin-bottom: 29px;
-            font-size: 24px;
-
-        }
-
-
-        .infoNosotros__texto2 p {
-
-            font-size: 20px;
-        }
-
 
         .infoNosotros__img2 {
 
@@ -168,40 +176,54 @@
 
 }
 
+//------------------------------------------------------------------Sección Valoraciones----------------------------------------------------------
+
 
 @media (min-width:769px) and (max-width:1024px) {
 
-    .contenedorValoraciones h2 {
-        margin-top: 25px;
-        font-size: 22px;
+    .contenedorValoraciones {
+        h2 {
+            margin-top: 25px;
+            font-size: 22px;
+        }
+
+        .valoracion {
+            max-height: 140px;
+
+
+            .valoracion__texto {
+
+                p {
+                    font-size: 18px;
+                }
+
+            }
+
+        }
+
     }
-
-    .valoracion {
-        max-height: 140px;
-
-    }
-
-    .valoracion__texto p {
-        font-size: 18px;
-    }
-
 
 }
 
 @media (min-width:1025px) {
 
-    .contenedorValoraciones h2 {
-        margin-top: 25px;
-        font-size: 24px;
-    }
+    .contenedorValoraciones {
 
-    .valoracion {
-        max-height: 150px;
-    }
+        h2 {
+            margin-top: 25px;
+            font-size: 24px;
+        }
+
+        .valoracion {
+            max-height: 150px;
+
+            .valoracion__texto p {
+                font-size: 20px;
+            }
 
 
-    .valoracion__texto p {
-        font-size: 20px;
+        }
+
     }
 
 }

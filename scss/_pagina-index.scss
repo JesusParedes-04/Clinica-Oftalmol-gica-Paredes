@@ -66,36 +66,25 @@
     margin-right: 15px;
 
 
-    .infoNosotros__texto h2 {
-        text-transform: uppercase;
-        color: #4586BF;
-        font-family: $fuente-Secundaria;
-        margin-bottom: 25px;
-        font-size: 20px;
+    .infoNosotros__texto {
+        h2 {
+            text-transform: uppercase;
+            color: #4586BF;
+            font-family: $fuente-Secundaria;
+            margin-bottom: 25px;
+            font-size: 20px;
+
+            p {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 16px;
+            }
+        }
+
+
     }
 
-    .infoNosotros__texto2 h2 {
 
-        text-transform: uppercase;
-        color: #4586BF;
-        font-family: $fuente-Secundaria;
-        margin-bottom: 25px;
-        font-size: 20px;
-    }
-
-
-    .infoNosotros__texto p {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        font-size: 16px;
-    }
-
-    .infoNosotros__texto2 p {
-
-        margin-top: 25px;
-        margin-bottom: 25px;
-        font-size: 16px;
-    }
 
     .infoNosotros__img img {
         object-fit: cover;
@@ -103,6 +92,27 @@
         margin-bottom: 20px;
         width: 100%;
         height: 100%;
+    }
+
+
+    .infoNosotros__texto2 {
+
+        h2 {
+
+            text-transform: uppercase;
+            color: #4586BF;
+            font-family: $fuente-Secundaria;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+
+        p {
+
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
     }
 
 
@@ -117,45 +127,50 @@
 }
 
 /* -----------------------------------------------------------------------------Valoraciones ------------------------------------------------------*/
-.contenedorValoraciones h2 {
-    color: #4586BF;
-    font-family: $fuente-Secundaria;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 25px;
-}
+.contenedorValoraciones {
 
-.valoracion {
-    max-height: 220px;
-    background-color: #4586BF;
-    border-radius: 10px;
-}
+    h2 {
+        color: #4586BF;
+        font-family: $fuente-Secundaria;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
 
-.valoracion__texto {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-}
+    .valoracion {
+        max-height: 220px;
+        background-color: #4586BF;
+        border-radius: 10px;
 
+        .valoracion__texto {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
 
-.valoracion__texto p {
-    color: white;
-    font-family: $fuente-principal;
-    font-size: 16px;
-    margin: 35px 15px;
-    text-align: left;
+            p {
+                color: white;
+                font-family: $fuente-principal;
+                font-size: 16px;
+                margin: 35px 15px;
+                text-align: left;
 
-}
+                .valoracion__cita {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    font-style: italic;
+                    text-transform: capitalize;
+                    margin-top: 5px;
+                }
 
-.valoracion__cita {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-style: italic;
-    text-transform: capitalize;
-    margin-top: 5px;
+            }
+
+        }
+
+    }
+
 }
