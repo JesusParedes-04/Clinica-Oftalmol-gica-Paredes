@@ -1,0 +1,186 @@
+/*----------------------------------------------------------Pagina Obras Sociales -------------------------------------------------------------------------*/
+
+
+.contenedorOS {
+    display: flex;
+    height: 50vh;
+    position: relative;
+
+
+
+    .contenedorOS__img {
+        background-image: url(/Images/Obras-sociales.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        filter: grayscale(100%);
+        width: 100%;
+
+    }
+
+
+    .contenedorOS__bg {
+        top: 0px;
+        position: absolute;
+        background-color: #4586BF;
+        width: 50%;
+        height: 100%;
+        filter: opacity(75%);
+
+        .contenedorOS__bg__titulo {
+            position: relative;
+            top: 35%;
+
+            h1 {
+
+                color: $color-primario;
+                font-family: $fuente-Secundaria;
+                text-transform: uppercase;
+                color: white;
+                text-align: center;
+                margin-top: 45px
+            }
+
+
+        }
+
+    }
+}
+
+
+
+
+
+.styleOSbt {
+
+    margin-top: 70px;
+
+
+    .styleOSbt_box1 {
+        background-color: #4586BF;
+        border-radius: 10px;
+        text-align: center;
+
+       a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            opacity: 80%;
+        }
+    }
+
+
+
+    .styleOSbt_box2 {
+        background-color: #78bbf6;
+        border-radius: 10px;
+        text-align: center;
+
+        &:hover {
+            opacity: 80%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+
+
+    .styleOSbt_box3 {
+        background-color: #53A1E6;
+        border-radius: 10px;
+        text-align: center;
+
+        &:hover {
+            opacity: 80%;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+
+
+    .styleOSbt_box4 {
+        background-color: #498FCC;
+        border-radius: 10px;
+        text-align: center;
+
+
+       &:hover {
+            opacity: 80%;
+        }
+
+       a {
+            text-decoration: none;
+        }
+    }
+
+    .styleOSbt_box5 {
+        background-color: #0c5da4;
+        border-radius: 10px;
+        text-align: center;
+
+       &:hover {
+            opacity: 80%;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+
+    .styleOSbt_box6 {
+        background-color: #498FCC;
+        border-radius: 10px;
+        text-align: center;
+
+        &:hover {
+            opacity: 80%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+
+
+
+    .styleOSbt_box7 {
+        background-color: #2f6da3;
+        border-radius: 10px;
+        text-align: center;
+
+        &:hover {
+            opacity: 80%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+
+
+    .styleOSbt_box8 {
+        background-color: #4586BF;
+        border-radius: 10px;
+        text-align: center;
+
+       &:hover {
+            opacity: 80%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+}
