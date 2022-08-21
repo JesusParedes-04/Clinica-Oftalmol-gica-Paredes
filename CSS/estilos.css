@@ -253,7 +253,6 @@ footer {
   .contenedorValoraciones .valoracion .valoracion__texto {
     display: flex;
     justify-content: center;
-    justify-content: center;
     align-items: center;
     overflow: auto; }
     .contenedorValoraciones .valoracion .valoracion__texto p {
@@ -264,7 +263,6 @@ footer {
       text-align: left; }
       .contenedorValoraciones .valoracion .valoracion__texto p .valoracion__cita {
         display: flex;
-        justify-content: center;
         justify-content: center;
         font-style: italic;
         text-transform: capitalize;
