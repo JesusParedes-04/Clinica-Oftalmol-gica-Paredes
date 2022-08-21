@@ -30,12 +30,7 @@
             margin-bottom: 30px;
 
             img {
-
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-
+                @include objectFit-w-h;
             }
 
             .cards__info {

@@ -38,6 +38,7 @@ footer {
 
 .bloqueFooter {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #F5F5F5;
   align-items: center;
@@ -45,10 +46,10 @@ footer {
   .bloqueFooter .bloqueFooter__logo {
     display: flex;
     justify-content: center;
-    justify-content: center;
     align-items: center; }
   .bloqueFooter .bloqueFooter__contacto {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px; }
@@ -56,6 +57,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center; }
   .bloqueFooter .bloqueFooter__mapa {
     display: flex;

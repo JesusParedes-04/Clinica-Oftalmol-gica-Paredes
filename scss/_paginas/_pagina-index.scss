@@ -88,11 +88,9 @@
 
 
     .infoNosotros__img img {
-        object-fit: cover;
-        border-radius: 10px;
+        @include objectFit-w-h;
         margin-bottom: 20px;
-        width: 100%;
-        height: 100%;
+       
     }
 
 
@@ -118,11 +116,9 @@
 
 
     .infoNosotros__img2 img {
-        object-fit: cover;
-        border-radius: 10px;
+        @include objectFit-w-h;
         margin-bottom: 20px;
-        width: 100%;
-        height: 100%;
+        
     }
 
 }

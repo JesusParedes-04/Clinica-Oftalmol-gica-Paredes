@@ -276,8 +276,8 @@
             }
 
             .bloqueEspecialidad__img img {
-                object-fit: cover;
-                width: 100%;
+                @include objectFit-w-h;
+
             }
 
             .bloqueEspecialidad__img2 {
@@ -285,9 +285,8 @@
                 grid-row: 2/3;
 
                 img {
-                    object-fit: cover;
-                    width: 100%;
-                    border-radius: 10px;
+                    @include objectFit-w-h;
+
                 }
 
             }
@@ -298,10 +297,7 @@
 
                 img {
 
-                    object-fit: cover;
-                    width: 100%;
-                    border-radius: 10px;
-
+                    @include objectFit-w-h;
                 }
             }
 
@@ -350,9 +346,8 @@
                     grid-row: 2/3;
 
                     img {
-                        object-fit: cover;
-                        width: 100%;
-                        border-radius: 10px;
+                        @include objectFit-w-h;
+
             
                     }
 
@@ -363,10 +358,8 @@
                     grid-row: 4/5;
 
                     img {
+                        @include objectFit-w-h;
 
-                        object-fit: cover;
-                        width: 100%;
-                        border-radius: 10px;
             
                     }
 
