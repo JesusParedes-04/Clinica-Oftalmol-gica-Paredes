@@ -594,7 +594,7 @@ footer {
 
 @media (min-width: 1025px) {
   .carouselInfo {
-    width: 24%; }
+    width: 50%; }
     .carouselInfo h1 {
       margin-left: 60px;
       margin-top: 50px;
@@ -602,16 +602,17 @@ footer {
       color: #4586bf;
       font-family: "Fira Sans Condensed", sans-serif;
       margin-bottom: 8px;
-      font-size: 38px;
-      font-style: Bolder; }
+      font-size: 58px;
+      font-style: Bolder; 
+    line-height: 80px;}
     .carouselInfo .carouselInfo__btn {
       margin-left: 55px;
       margin-top: 20px;
       gap: 15px; }
-      .carouselInfo .carouselInfo__btn .carouselInfo__btn button {
-        padding: 10px;
+      .carouselInfo .carouselInfo__btn button {
+        padding: 20px;
         border-radius: 10px;
-        font-size: 20px; } }
+        font-size: 30px; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .infoNosotros {
