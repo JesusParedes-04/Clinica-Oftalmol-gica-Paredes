@@ -1,15 +1,14 @@
 /*----------------------------------------------------------Pagina staff -------------------------------------------------------------------------*/
 .containerStaff {
-    display: flex;
-    flex-direction: column;
+ @include flex-direction (column);
     align-items: center;
-    justify-content: center;
+  
 
     h1 {
 
         text-align: center;
-        color: $color-primario;
-        font-family: $fuente-principal;
+        color: map-get($map: $palette-colors, $key: primary-color );
+        font-family: map-get($map: $main-fonts, $key: f-main);;
         margin-top: 160px;
         margin-bottom: 60px;
         text-transform: uppercase;
@@ -18,12 +17,9 @@
 
 
     .contenedorCard {
-
+@include flex-direction (column);
         width: 95%;
         height: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin: 0 auto;
 
         .cards {
@@ -51,7 +47,7 @@
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
-                background-color: $color-primario;
+                background-color: map-get($map: $palette-colors, $key: primary-color );
                 transition: .5s all;
                 border-radius: 10px;
                 opacity: 0.8;

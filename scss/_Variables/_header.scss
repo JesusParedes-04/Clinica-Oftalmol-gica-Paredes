@@ -10,7 +10,7 @@
 .navLink {
     margin-left: 20px;
     text-decoration: none;
-    font-family:  'Mukta', sans-serif;
+    font-family:  map-get($map: $main-fonts, $key: f-main);;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 20px;

@@ -36,6 +36,6 @@
 
 
 .bloqueFooter__RRSS .icons {
-    color: $color-primario;
+    color: map-get($map: $palette-colors, $key: primary-color );
     margin: 0 auto;
   }

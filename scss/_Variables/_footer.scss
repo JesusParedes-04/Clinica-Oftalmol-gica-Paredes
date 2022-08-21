@@ -5,7 +5,7 @@ footer {
 .bloqueFooter {
   @include flex-direction(column);
 
-  background-color: #F5F5F5;
+  background-color: map-get($map:$palette-colors , $key:white-color );
   align-items: center;
   justify-content: center;
 
@@ -68,9 +68,9 @@ footer {
 .footerLegal {
   text-align: center;
   padding: 10px;
-  color:  #F5F5F5;
+  color: map-get($map:palette-colors, $key:white-color );
   text-transform: uppercase;
-  font-family:  'Mukta', sans-serif;
+  font-family:  map-get($map: $main-fonts, $key: f-main);
   font-size: 10px;
   margin: 0;
 }

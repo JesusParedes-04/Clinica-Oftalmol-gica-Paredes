@@ -14,7 +14,7 @@ $color-blue-transparente: #4586bfd7;
 
 a {
     text-decoration: none;
-    color: $color-blanco;
+    color: map-get($map: $palette-colors, $key: white-color);
 }
 
 
@@ -23,6 +23,6 @@ li {
 }
 
 body {
-    font-family: $fuente-principal;
+    font-family: map-get($map: $main-fonts, $key: f-main);;
 }
 

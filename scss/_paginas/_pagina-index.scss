@@ -29,8 +29,8 @@
         margin-left: 20px;
         margin-top: 20px;
         text-transform: uppercase;
-        color: $color-primario;
-        font-family: $fuente-Secundaria;
+        color: map-get($map: $palette-colors, $key: primary-color );
+        font-family: map-get($map: $main-fonts , $key: f-secondary );
         margin-bottom: 8px;
         font-size: 28px;
         font-style: Bolder;
@@ -45,7 +45,7 @@
 
         button {
 
-            color: $color-primario;
+            color: map-get($map: $palette-colors, $key: primary-color );
             border: none;
             padding: 5px;
             border-radius: 8px;
@@ -71,7 +71,7 @@
         h2 {
             text-transform: uppercase;
             color: #4586BF;
-            font-family: $fuente-Secundaria;
+            font-family:map-get($map: $main-fonts , $key: f-secondary );
             margin-bottom: 25px;
             font-size: 20px;
 
@@ -102,7 +102,7 @@
 
             text-transform: uppercase;
             color: #4586BF;
-            font-family: $fuente-Secundaria;
+            font-family:map-get($map: $main-fonts , $key: f-secondary );
             margin-bottom: 25px;
             font-size: 20px;
         }
@@ -132,7 +132,7 @@
 
     h2 {
         color: #4586BF;
-        font-family: $fuente-Secundaria;
+        font-family:map-get($map: $main-fonts , $key: f-secondary );
         text-transform: uppercase;
         text-align: center;
         font-size: 20px;
@@ -153,7 +153,7 @@
 
             p {
                 color: white;
-                font-family: $fuente-principal;
+                font-family:  map-get($map: $main-fonts, $key: f-main);;
                 font-size: 16px;
                 margin: 35px 15px;
                 text-align: left;
