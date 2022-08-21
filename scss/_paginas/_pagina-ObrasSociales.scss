@@ -68,9 +68,9 @@
 
 
     .styleOSbt_box2 {
+        @extend .styleOSbt_box1;
         background-color: #78bbf6;
-        border-radius: 10px;
-        text-align: center;
+        
 
         &:hover {
             opacity: 80%;
@@ -84,9 +84,9 @@
 
 
     .styleOSbt_box3 {
+        @extend .styleOSbt_box1;
         background-color: #53A1E6;
-        border-radius: 10px;
-        text-align: center;
+        
 
         &:hover {
             opacity: 80%;
@@ -101,9 +101,9 @@
 
 
     .styleOSbt_box4 {
+        @extend .styleOSbt_box1;
         background-color: #498FCC;
-        border-radius: 10px;
-        text-align: center;
+      
 
 
        &:hover {
@@ -116,9 +116,9 @@
     }
 
     .styleOSbt_box5 {
+        @extend .styleOSbt_box1;
         background-color: #0c5da4;
-        border-radius: 10px;
-        text-align: center;
+
 
        &:hover {
             opacity: 80%;
@@ -132,9 +132,9 @@
     }
 
     .styleOSbt_box6 {
+        @extend .styleOSbt_box1;
         background-color: #498FCC;
-        border-radius: 10px;
-        text-align: center;
+       
 
         &:hover {
             opacity: 80%;
@@ -149,9 +149,9 @@
 
 
     .styleOSbt_box7 {
+        @extend .styleOSbt_box1;
         background-color: #2f6da3;
-        border-radius: 10px;
-        text-align: center;
+  
 
         &:hover {
             opacity: 80%;
@@ -165,9 +165,9 @@
 
 
     .styleOSbt_box8 {
+        @extend .styleOSbt_box1;
         background-color: map-get($map: $palette-colors, $key: primary-color );;
-        border-radius: 10px;
-        text-align: center;
+
 
        &:hover {
             opacity: 80%;
