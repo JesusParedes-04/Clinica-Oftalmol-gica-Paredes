@@ -4,17 +4,14 @@
 
 .contenedorContacto {
     background-image: url(../Images/Fondo-contacto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    max-width: 100%;
+@include background-image-prop;
 
     .pruebaflex {
         display: flex;
         flex-direction: row;
 
         .formulario {
-            background-color: $color-secundario;
+            background-color: map-get($map: $palette-colors , $key: secondary-color );
             border-radius: 10px;
             margin: 230px auto;
             width: 90%;
@@ -31,7 +28,7 @@
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: large;
-                    color:$color-primario;
+                    color: map-get($map: $palette-colors, $key: primary-color);
                 }
 
                 .formulario__label {
@@ -42,7 +39,7 @@
 
 
                     .formulario__label__hijo {
-                        color: $color-primario;
+                        color:  map-get($map: $palette-colors, $key: primary-color);
                         margin-bottom: 5px;
                         margin-top: 5px;
                         text-transform: capitalize;
@@ -84,7 +81,7 @@
                             padding: 8px;
                             border-radius: 5px;
                             border-style: none;
-                            background-color: $color-primario;
+                            background-color: map-get($map: $palette-colors, $key:primary-color);
                             color: white;
                             font-style: $fuente-Secundaria;
                             text-transform: uppercase;

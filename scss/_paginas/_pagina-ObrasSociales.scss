@@ -10,9 +10,7 @@
 
     .contenedorOS__img {
         background-image: url(/Images/Obras-sociales.jfif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
+       @include background-image-prop;
         filter: grayscale(100%);
         width: 100%;
 
@@ -22,7 +20,7 @@
     .contenedorOS__bg {
         top: 0px;
         position: absolute;
-        background-color: #4586BF;
+        background-color: map-get($map: $palette-colors, $key: primary-color );
         width: 50%;
         height: 100%;
         filter: opacity(75%);
@@ -33,7 +31,7 @@
 
             h1 {
 
-                color: $color-primario;
+                color: map-get($map: $palette-colors, $key: primary-color);
                 font-family: $fuente-Secundaria;
                 text-transform: uppercase;
                 color: white;
@@ -54,7 +52,7 @@
 
 
     .styleOSbt_box1 {
-        background-color: #4586BF;
+        background-color: map-get($map: $palette-colors, $key: primary-color );;
         border-radius: 10px;
         text-align: center;
 
@@ -167,7 +165,7 @@
 
 
     .styleOSbt_box8 {
-        background-color: #4586BF;
+        background-color: map-get($map: $palette-colors, $key: primary-color );;
         border-radius: 10px;
         text-align: center;
 

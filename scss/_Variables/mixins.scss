@@ -1,0 +1,28 @@
+
+
+@mixin tablet {
+   @media (min-width: 769px) and (max-width: 1024px){
+        @content;
+    }
+};
+
+
+@mixin desktop {
+    @media (min-width:1025px){
+        @content;
+    }
+};
+
+
+@mixin flex-direction ($direction) {
+    display: flex;
+    justify-content: center;
+}
+
+
+@mixin background-image-prop {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
