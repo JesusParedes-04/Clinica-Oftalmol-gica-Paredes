@@ -12,7 +12,7 @@ li {
   list-style: none; }
 
 body {
-  font-family: "Mukta", sans-serif; }
+  font-family: "Mukta", sans-serif;}
 
 .navbarBg {
   background-color: rgba(245, 245, 245, 0.903); }
@@ -416,6 +416,7 @@ footer {
       text-decoration: none; }
 
 /*----------------------------------------------------------Pagina Contacto -------------------------------------------------------------------------*/
+
 .contenedorContacto {
   background-image: url(../Images/Fondo-contacto.jpg);
   background-size: cover;
