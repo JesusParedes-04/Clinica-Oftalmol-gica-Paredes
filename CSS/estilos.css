@@ -518,6 +518,7 @@ footer {
         top: 0px;
         position: absolute;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         overflow: hidden;
@@ -525,12 +526,20 @@ footer {
         transition: .5s all;
         border-radius: 10px;
         opacity: 0.8; }
-        .containerStaff .contenedorCard .cards .cards__info p {
-          font-size: 18px;
+        .containerStaff .contenedorCard .cards .cards__info h2 {
+          font-size: 20px;
           text-transform: capitalize;
           color: white;
           text-align: center;
           font-weight: bold; }
+
+          .containerStaff .contenedorCard .cards .cards__info p {
+            color: white;
+            text-align: center;
+            line-height:5px;
+            font-size: 18px;
+          margin: 20px;
+          }
       .containerStaff .contenedorCard .cards:hover .cards__info {
         width: 100%; }
   .containerStaff .styleRow {
@@ -595,7 +604,7 @@ footer {
     width: 50%; }
     .carouselInfo h1 {
       margin-left: 60px;
-      margin-top: 50px;
+      margin-top: 190px;
       text-transform: uppercase;
       color: #4586bf;
       font-family: "Fira Sans Condensed", sans-serif;
@@ -762,8 +771,10 @@ footer {
     margin-right: auto; }
     .contenedorCard .cards .cards__info {
       height: 100%; }
+      .contenedorCard .cards .cards__info h2 {
+        font-size: 24px; }
     .contenedorCard .cards .cards__info p {
-      font-size: 20px; }
+      font-size: 22px; }
   .styleRow {
     padding: 3rem; } }
 
@@ -781,8 +792,10 @@ footer {
     margin-right: auto; }
     .containerStaff .contenedorCard .cards .cards__info {
       height: 100%; }
+      .containerStaff .contenedorCard .cards .cards__info h2 {
+        font-size: 26px; }
       .containerStaff .contenedorCard .cards .cards__info p {
-        font-size: 24px; } }
+        font-size: 22px; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .formulario {

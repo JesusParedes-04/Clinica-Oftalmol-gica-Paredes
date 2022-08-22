@@ -10,19 +10,21 @@ $color-blue-transparente: #4586bfd7;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+};
 
 a {
     text-decoration: none;
     color: map-get($map: $palette-colors, $key: white-color);
-}
+};
 
 
 li {
     list-style: none;
-}
+};
+
+
 
 body {
-    font-family: map-get($map: $main-fonts, $key: f-main);;
-}
+    font-family: map-get($map: $main-fonts, $key: f-main)
+};
 

@@ -7,6 +7,6 @@ color-blue-transparent: #4586bfd7
 );
 
 $main-fonts: (
-f-main: 'Mukta', sans-serif,
-f-secondary: 'Fira Sans Condensed', sans-serif
+f-main: ('Mukta' sans-serif),
+f-secondary: ('Fira Sans Condensed' sans-serif) 
 );
