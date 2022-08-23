@@ -153,13 +153,9 @@ footer {
     width: 40vh; } }
 
 /*----------------------------------------------------------Pagina Index -------------------------------------------------------------------------*/
-.carousel-item {
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
-  position: relative; }
-
+.carousel-inner{
+height: 100vh;
+}
 .carouselFilter {
   position: absolute;
   top: 0;
@@ -199,6 +195,7 @@ footer {
 /* ------------------------------------------------------------------------- */
 .infoNosotros {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 50px;
   margin-left: 15px;
@@ -281,7 +278,9 @@ footer {
     text-align: center; }
   .containerEspecialidad .bloqueEspecialidad {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px; }
     .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info {
       margin-top: 20px; }
       .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info h2 {
@@ -699,7 +698,9 @@ footer {
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 10px;
-    row-gap: 10px; }
+    row-gap: 10px;
+  margin: 20px 30px;
+ }
     .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info {
       margin: 0%; }
       .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info h2 {
