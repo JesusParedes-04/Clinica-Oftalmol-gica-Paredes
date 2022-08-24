@@ -1,0 +1,5 @@
+-Se agregó target_blank a los links para otorgar más comodidad al usuario mientras navega.
+-Además se agregó al atributo alt una breve descripción de la imagen en cuestión.
+-Respecto a las keywords y descripciones se agregaron en todas las páginas del head según su tipo de contexto.
+Por ejemplo, en la página del index al ser la principal se colocó keywords como: oftalmología, salud.
+-Se agregó el lazing loading en las imagenes para una optima carga de imagenes.

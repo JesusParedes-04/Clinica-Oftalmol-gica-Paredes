@@ -436,10 +436,10 @@ footer {
 }
 
 .contenedorOS .contenedorOS__img {
-  background-image: url(/Images/Obras-sociales.jfif);
+  background-image: url(/Images/Background-OS.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center;
   filter: grayscale(100%);
   width: 100%;
 }
@@ -803,7 +803,7 @@ footer {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .carouselInfo {
-    width: 25%;
+    width: 40%;
   }
 
   .carouselInfo h1 {
@@ -835,12 +835,12 @@ footer {
 
   .carouselInfo h1 {
     margin-left: 60px;
-    margin-top: 190px;
+    margin-top: 130px;
     text-transform: uppercase;
     color: #4586bf;
     font-family: "Fira Sans Condensed", sans-serif;
     margin-bottom: 8px;
-    font-size: 58px;
+    font-size: 50px;
     font-style: Bolder;
     line-height: 80px;
   }
@@ -854,7 +854,7 @@ footer {
   .carouselInfo .carouselInfo__btn button {
     padding: 20px;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -1188,7 +1188,7 @@ footer {
 
     .contenedorOS .contenedorOS__img {
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: center;
     }
 
   }
