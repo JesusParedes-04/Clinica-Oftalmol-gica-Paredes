@@ -83,6 +83,13 @@
                             text-transform: uppercase;
                             font-weight: 600;
 
+
+                            &:hover {
+                                transition: ease 0.5s;
+                                  background-color:  #f5f5f5B3 ;
+                                  color:  #4586bf;
+                                }
+
                         }
                     }
 

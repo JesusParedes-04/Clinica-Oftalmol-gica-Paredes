@@ -29,8 +29,8 @@
         margin-left: 20px;
         margin-top: 20px;
         text-transform: uppercase;
-        color: map-get($map: $palette-colors, $key: primary-color );
-        font-family: map-get($map: $main-fonts , $key: f-secondary );
+        color: map-get($map: $palette-colors, $key: primary-color);
+        font-family: map-get($map: $main-fonts , $key: f-secondary);
         margin-bottom: 8px;
         font-size: 28px;
         font-style: Bolder;
@@ -45,121 +45,127 @@
 
         button {
 
-            color: map-get($map: $palette-colors, $key: primary-color );
+            color: map-get($map: $palette-colors, $key: primary-color);
             border: none;
             padding: 5px;
             border-radius: 8px;
             font-size: 16px;
+
+            &:hover {
+                color: white;
+            }
+
         }
+
 
     }
 
 
-}
+    /* ------------------------------------------------------------------------- */
+
+    .infoNosotros {
+        @include flex-direction(column);
+        margin-top: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
 
 
-/* ------------------------------------------------------------------------- */
+        .infoNosotros__texto {
+            h2 {
+                text-transform: uppercase;
+                color: #4586BF;
+                font-family: map-get($map: $main-fonts , $key: f-secondary);
+                margin-bottom: 25px;
+                font-size: 20px;
 
-.infoNosotros {
-    @include flex-direction(column);
-    margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
+                p {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    font-size: 16px;
+                }
+            }
 
 
-    .infoNosotros__texto {
-        h2 {
-            text-transform: uppercase;
-            color: #4586BF;
-            font-family:map-get($map: $main-fonts , $key: f-secondary );
-            margin-bottom: 25px;
-            font-size: 20px;
+        }
+
+
+
+        .infoNosotros__img img {
+            @include objectFit-w-h;
+            margin-bottom: 20px;
+
+        }
+
+
+        .infoNosotros__texto2 {
+
+            h2 {
+
+                text-transform: uppercase;
+                color: #4586BF;
+                font-family: map-get($map: $main-fonts , $key: f-secondary);
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
 
             p {
+
                 margin-top: 25px;
                 margin-bottom: 25px;
                 font-size: 16px;
             }
+
         }
 
 
+        .infoNosotros__img2 img {
+            @include objectFit-w-h;
+            margin-bottom: 20px;
+
+        }
+
     }
 
-
-
-    .infoNosotros__img img {
-        @include objectFit-w-h;
-        margin-bottom: 20px;
-       
-    }
-
-
-    .infoNosotros__texto2 {
+    /* ------------------------------------------------------------------------- */
+    .contenedorValoraciones {
 
         h2 {
-
-            text-transform: uppercase;
             color: #4586BF;
-            font-family:map-get($map: $main-fonts , $key: f-secondary );
-            margin-bottom: 25px;
+            font-family: map-get($map: $main-fonts , $key: f-secondary);
+            text-transform: uppercase;
+            text-align: center;
             font-size: 20px;
-        }
-
-        p {
-
-            margin-top: 25px;
+            margin-top: 15px;
             margin-bottom: 25px;
-            font-size: 16px;
         }
 
-    }
+        .valoracion {
+            max-height: 220px;
+            background-color: #4586BF;
+            border-radius: 10px;
 
+            .valoracion__texto {
+                @include flex-direction(row);
+                justify-content: center;
+                align-items: center;
+                overflow: auto;
 
-    .infoNosotros__img2 img {
-        @include objectFit-w-h;
-        margin-bottom: 20px;
-        
-    }
+                p {
+                    color: white;
+                    font-family: map-get($map: $main-fonts, $key: f-main);
+                    ;
+                    font-size: 16px;
+                    margin: 35px 15px;
+                    text-align: left;
 
-}
+                    .valoracion__cita {
+                        @include flex-direction(row);
+                        justify-content: center;
+                        font-style: italic;
+                        text-transform: capitalize;
+                        margin-top: 5px;
+                    }
 
-/* ------------------------------------------------------------------------- */
-.contenedorValoraciones {
-
-    h2 {
-        color: #4586BF;
-        font-family:map-get($map: $main-fonts , $key: f-secondary );
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 20px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-
-    .valoracion {
-        max-height: 220px;
-        background-color: #4586BF;
-        border-radius: 10px;
-
-        .valoracion__texto {
-            @include flex-direction(row);
-            justify-content: center;
-            align-items: center;
-            overflow: auto;
-
-            p {
-                color: white;
-                font-family:  map-get($map: $main-fonts, $key: f-main);;
-                font-size: 16px;
-                margin: 35px 15px;
-                text-align: left;
-
-                .valoracion__cita {
-                    @include flex-direction(row);
-                    justify-content: center;
-                    font-style: italic;
-                    text-transform: capitalize;
-                    margin-top: 5px;
                 }
 
             }
@@ -167,5 +173,3 @@
         }
 
     }
-
-}

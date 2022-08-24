@@ -221,9 +221,9 @@ footer {
 .carouselFilter {
   position: absolute;
   top: 0;
-  width: 50%;
+  width: 70%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.647);
+  background: rgba(255, 255, 255, 0.791);
   filter: blur(30px);
 }
 
@@ -253,7 +253,6 @@ footer {
   margin-top: 10px;
   gap: 10px;
 }
-
 .carouselInfo .carouselInfo__btn button {
   color: #4586bf;
   border: none;
@@ -261,7 +260,13 @@ footer {
   border-radius: 8px;
   font-size: 16px;
 }
-
+.hover-btn:hover{
+background-color: #4586BF;
+transition: ease 1s;
+}
+.carouselInfo__btn button:hover{
+color: white;
+}
 /* ------------------------------------------------------------------------- */
 .infoNosotros {
   display: flex;
@@ -317,6 +322,12 @@ footer {
 }
 
 /* ------------------------------------------------------------------------- */
+.contenedorValoraciones{
+margin-top: 50px ;
+margin-bottom: 50px ;
+
+}
+
 .contenedorValoraciones h2 {
   color: #4586BF;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -600,7 +611,9 @@ footer {
 .contenedorContacto .pruebaflex .formulario {
   background-color: #f5f5f5B3;
   border-radius: 10px;
-  margin: 230px auto;
+  margin-top: 150px ;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
 }
 
@@ -615,7 +628,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: large;
+  font-size: 20px;
   color: #4586bf;
 }
 
@@ -644,7 +657,7 @@ footer {
 }
 
 .contenedorContacto .pruebaflex .formulario .formulario__fieldset .formulario__label .formulario__label__input .formulario__textarea {
-  border-radius: 5px;
+  border-radius: 50px;
   margin-bottom: 5px;
   width: 100%;
 }
@@ -654,6 +667,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .contenedorContacto .pruebaflex .formulario .formulario__fieldset .contenedorBtn .contenedorBtn__hijo {
@@ -672,6 +686,13 @@ footer {
   text-transform: uppercase;
   font-weight: 600;
 }
+
+.contenedorContacto .pruebaflex .formulario .formulario__fieldset .contenedorBtn .contenedorBtn__hijo .contenedorBtn__boton:hover {
+transition: ease 0.5s;
+  background-color:  #f5f5f5B3 ;
+  color:  #4586bf;
+}
+
 
 /*----------------------------------------------------------Pagina staff -------------------------------------------------------------------------*/
 .containerStaff {
@@ -766,6 +787,12 @@ footer {
 .containerStaff .styleRow .btnFont h5 {
   font-weight: bold;
 }
+
+.containerStaff .styleRow .btnFont:hover {
+  color: #4586bf;
+
+}
+
 
 .whatsaapIcon {
   display: flex;
@@ -930,6 +957,12 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+  .contenedorValoraciones {
+    margin-top: 70px;
+  margin-bottom: 70px;
+  }
+
   .contenedorValoraciones h2 {
     margin-top: 25px;
     font-size: 22px;
@@ -945,6 +978,11 @@ footer {
 }
 
 @media (min-width: 1025px) {
+
+  .contenedorValoraciones {
+    margin-top: 100px;
+  margin-bottom: 100px;
+  }
   .contenedorValoraciones h2 {
     margin-top: 25px;
     font-size: 24px;
@@ -1132,12 +1170,19 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
   .formulario {
     width: 80%;
   }
 
-  .formulario .formulario__legend {
-    font-size: 20px;
+  .contenedorContacto .pruebaflex .formulario{
+margin: 380px, auto
+  }
+
+  .contenedorContacto .pruebaflex .formulario .formulario__fieldset .formulario__legend {
+
+    font-size: 25px;
+  
   }
 
   .formulario .formulario__label__hijo {
@@ -1161,13 +1206,20 @@ footer {
     width: 70%;
   }
 
-  .formulario .formulario__legend {
-    font-size: 24px;
-    margin-top: 10px;
+  .contenedorContacto .pruebaflex .formulario{
+
+margin-bottom: 30px;
+
   }
 
+  .contenedorContacto .pruebaflex .formulario .formulario__fieldset .formulario__legend {
+
+    font-size: 30px;
+  }
+
+
   .formulario .formulario__label__hijo {
-    font-size: 20px;
+    font-size: 23px;
     margin: 10px 0;
   }
 
