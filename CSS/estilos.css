@@ -823,7 +823,7 @@ transition: ease 0.5s;
   }
 }
 
-.bloqueFooter__RRSS .icons {
+.bloqueFooter__RRSS .icons a {
   color: #4586bf;
   margin: 0 auto;
 }
