@@ -60,6 +60,7 @@ footer {
 
 .bloqueFooter .bloqueFooter__logo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -69,15 +70,20 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .bloqueFooter .bloqueFooter__RRSS {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.fa-brands {
+  color: #4586bf;
 }
 
 .bloqueFooter .bloqueFooter__mapa {
@@ -86,9 +92,16 @@ footer {
   align-items: center;
 }
 
+.bloqueFooter__logo{
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
 .bloqueFooter__logo img {
-  width: 30%;
-  margin: 10px;
+  width: 80px;
 }
 
 .bloqueFooter__contacto h3 {
@@ -168,6 +181,12 @@ footer {
   .bloqueFooter__mapa iframe {
     width: 40vh;
   }
+
+  
+.bloqueFooter__logo img {
+  width: 90px;
+}
+
 }
 
 @media (min-width: 1025px) {
@@ -211,12 +230,26 @@ footer {
   .bloqueFooter__mapa iframe {
     width: 40vh;
   }
+
+  .bloqueFooter__logo img {
+    width: 100px;
+  }
+  
+
 }
 
 /*----------------------------------------------------------Pagina Index -------------------------------------------------------------------------*/
 .carousel-inner {
   height: 100vh;
 }
+
+.carousel-item img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 
 .carouselFilter {
   position: absolute;
@@ -828,11 +861,6 @@ transition: ease 0.5s;
   .whatsaapIcon {
     bottom: 70px;
   }
-}
-
-.bloqueFooter__RRSS .icons a {
-  color: #4586bf;
-  margin: 0 auto;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
