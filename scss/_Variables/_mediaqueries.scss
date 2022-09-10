@@ -71,8 +71,7 @@
 
     .infoNosotros {
         display: grid;
-        grid-area: "texto""imagen"
-            "texto""imagen";
+
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         row-gap: 30px;
@@ -117,8 +116,7 @@
 
     .infoNosotros {
         display: grid;
-        grid-area: "texto""imagen"
-            "texto""imagen";
+
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         row-gap: 35px;
@@ -239,10 +237,6 @@
 
         .bloqueEspecialidad {
             display: grid;
-            grid-area: "descripcion""imagen"
-                "imagen""descripacion"
-                "descripcion""imagen"
-                "imagen""descripacion";
             grid-template-columns: 60% 40%;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             column-gap: 10px;
@@ -309,10 +303,7 @@
 
         .bloqueEspecialidad {
             display: grid;
-            grid-area: "descripcion""imagen"
-                "imagen""descripacion"
-                "descripcion""imagen"
-                "imagen""descripacion";
+
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             column-gap: 20px;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Mukta:wght@300;400;600;700&display=swap");
 
+ /* -----------------------------------------------------------------------------Globales----------------------- */
 * {
   padding: 0;
   margin: 0;
@@ -19,13 +20,24 @@ body {
   font-family: "Mukta", sans-serif;
 }
 
+ /* -----------------------------------------------------------------------------Nav----------------------- */
+
+
 .navbarBg {
   background-color: rgba(245, 245, 245, 0.903);
 }
 
 .navbarBg__logo {
-  width: 160px;
+width: 150px;;
 }
+
+.navbarBg__cont{
+
+  margin-left: 10px;
+  
+  }
+  
+
 
 .navLink {
   margin-left: 20px;
@@ -33,7 +45,7 @@ body {
   font-family: 'Mukta', sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 16px;
   color: #4586bf;
 }
 
@@ -45,6 +57,49 @@ body {
 .navLink:visited {
   color: #4586bf;
 }
+
+@media (min-width:768px) and (max-width:1024px){
+
+
+  .navbarBg__logo {
+    width: 130px;;
+    }
+    
+    .navbarBg__cont{
+    
+      margin-left: 20px;
+      
+      }
+    
+      .navLink {
+
+        font-size: 18px;
+      }
+    
+    }
+
+      @media (min-width:1025px) {
+
+
+        .navbarBg__logo {
+          width: 180px;;
+          }
+          
+          .navbarBg__cont{
+          
+            margin-left: 50px;
+            
+            }
+
+            .navLink {
+
+              font-size: 22px;
+            }
+
+}
+
+ /* -----------------------------------------------------------------------------Footer----------------------- */
+
 
 footer {
   background-color: #4586bf;
@@ -87,6 +142,10 @@ footer {
   color: #4586bf;
 }
 
+.fa-brands:hover {
+  color:#336489;
+}
+
 .bloqueFooter .bloqueFooter__mapa {
   display: flex;
   justify-content: center;
@@ -102,19 +161,21 @@ footer {
 }
 
 .bloqueFooter__logo img {
-  width: 80px;
+  width: 130px;
 }
 
 .bloqueFooter__contacto h3 {
   color: #4586bf;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .bloqueFooter__RRSS h3 {
+  font-size: 18px;
+  font-weight: bold;
   color: #4586bf;
   text-transform: capitalize;
-  font-size: 16px;
   text-align: center;
   margin-bottom: 10px;
   margin-left:100px ;
@@ -164,7 +225,7 @@ footer {
   }
 
   .bloqueFooter__contacto h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .bloqueFooter__contacto p {
@@ -172,7 +233,7 @@ footer {
   }
 
   .bloqueFooter__RRSS h3 {
-    font-size: 18px;
+    font-size: 22x;
     text-align: center;
     margin-bottom: 10px;
     margin-left:10px ;
@@ -189,7 +250,7 @@ footer {
 
 
   .bloqueFooter__logo img {
-    width: 90px;
+    width: 140px;
   }
 
 }
@@ -199,7 +260,7 @@ footer {
     display: grid;
     grid-template-areas: "logo""info""mapa""infoplus";
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
   }
 
   .bloqueFooter .bloqueFooter__RRSS {
@@ -215,7 +276,7 @@ footer {
   }
 
   .bloqueFooter__contacto h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .bloqueFooter__contacto p {
@@ -223,7 +284,7 @@ footer {
   }
 
   .bloqueFooter__RRSS h3 {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
     margin-right: 55px;
@@ -239,7 +300,7 @@ footer {
   }
 
   .bloqueFooter__logo img {
-    width: 100px;
+    width: 150px;
   }
 
 
@@ -247,11 +308,11 @@ footer {
 
 /*----------------------------------------------------------Pagina Index -------------------------------------------------------------------------*/
 .secciónCarrousel{
-margin-top: 14vh;
+margin-top: 75px;
 }
 
 .carousel-inner {
-  height: 86vh;
+  height: 90vh;
 }
 
 .carousel-item img {
@@ -265,10 +326,10 @@ margin-top: 14vh;
 .carouselFilter {
   position: absolute;
   top: 0;
-  width: 70%;
+   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.791);
-  filter: blur(30px);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.791) 50%, rgba(255, 255, 255, 0));
+
 }
 
 .carouselInfo {
@@ -372,14 +433,14 @@ margin-top: 14vh;
 .subInfo {
   color: #4586BF;
   font-size: 16px;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight:lighter
+  font-family: "Mukta", sans-serif;
+  font-weight:500;
 }
 
 /* ------------------------------------------------------------------------- */
 .contenedorValoraciones {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 
 }
 
@@ -410,17 +471,21 @@ margin-top: 14vh;
   color: white;
   font-family: "Mukta", sans-serif;
   font-size: 16px;
-  margin: 35px 15px;
+  margin: 35px 10px;
   text-align: left;
+
 }
 
 .contenedorValoraciones .valoracion .valoracion__texto p .valoracion__cita {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   font-style: italic;
   text-transform: capitalize;
   margin-top: 5px;
+  margin-right: 10px;
 }
+
+
 
 /*----------------------------------------------------------Pagina Especialidades -------------------------------------------------------------------------*/
 .containerEspecialidad {
@@ -435,6 +500,9 @@ margin-top: 14vh;
   margin-top: 140px;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: bolder;
+
 }
 
 .containerEspecialidad .bloqueEspecialidad {
@@ -525,8 +593,8 @@ margin-top: 14vh;
 }
 
 .contenedorOS .contenedorOS__bg .contenedorOS__bg__titulo h1 {
-  color: #4586bf;
   font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: bolder;
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -679,7 +747,8 @@ margin-top: 14vh;
 }
 
 .contenedorContacto .pruebaflex .formulario .formulario__fieldset .formulario__legend {
-  font-family: 'Mukta', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -760,9 +829,10 @@ margin-top: 14vh;
 }
 
 .containerStaff h1 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: bolder;
   text-align: center;
   color: #4586bf;
-  font-family: "Mukta", sans-serif;
   margin-top: 160px;
   margin-bottom: 60px;
   text-transform: uppercase;
@@ -819,8 +889,8 @@ margin-top: 14vh;
 .containerStaff .contenedorCard .cards .cards__info p {
   color: white;
   text-align: center;
-  line-height: 5px;
-  font-size: 18px;
+  line-height: .5px;
+  font-size: 16px;
   margin: 20px;
 }
 
@@ -841,8 +911,10 @@ margin-top: 14vh;
   text-align: center;
 }
 
-.containerStaff .styleRow .btnFont h5 {
-  font-weight: bold;
+
+.containerStaff .styleRow .btnFont h3 {
+margin-top: 10px;
+  font-weight: 600;
 }
 
 .containerStaff .styleRow .btnFont:hover {
@@ -883,11 +955,11 @@ margin-top: 14vh;
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .secciónCarrousel{
-    margin-top: 15.5vh;
-    }
+    margin-top: 66px;
+  }
     
     .carousel-inner {
-      height: 84.5vh;
+      height: 89vh;
     }
 
   .carouselInfo {
@@ -923,11 +995,11 @@ margin-top: 14vh;
     }
     
     .carousel-inner {
-      height: 90vh;
+      height: 92vh;
     }
 
   .carouselInfo {
-    width: 50%;
+    width: 45%;
   }
 
   .carouselInfo h1 {
@@ -958,7 +1030,6 @@ margin-top: 14vh;
 @media (min-width: 769px) and (max-width: 1024px) {
   .infoNosotros {
     display: grid;
-    grid-area: "texto""imagen""texto""imagen";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 30px;
@@ -969,18 +1040,23 @@ margin-top: 14vh;
   }
 
   .infoNosotros .infoNosotros__texto p {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .infoNosotros .infoNosotros__texto h2 {
+    margin-bottom: 27px;
+    font-size: 24px;
   }
 
   .infoNosotros .infoNosotros__texto2 h2 {
     margin-bottom: 27px;
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .infoNosotros .infoNosotros__texto2 p {
     margin-top: 25px;
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .infoNosotros .infoNosotros__img2 {
@@ -997,7 +1073,6 @@ margin-top: 14vh;
 @media (min-width: 1025px) {
   .infoNosotros {
     display: grid;
-    grid-area: "texto""imagen""texto""imagen";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 35px;
@@ -1008,21 +1083,21 @@ margin-top: 14vh;
   }
 
   .infoNosotros .infoNosotros__texto h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 29px;
   }
 
   .infoNosotros .infoNosotros__texto p {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .infoNosotros .infoNosotros__texto2 h2 {
     margin-bottom: 29px;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .infoNosotros .infoNosotros__texto2 p {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .infoNosotros .infoNosotros__img2 {
@@ -1040,29 +1115,8 @@ margin-top: 14vh;
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .contenedorValoraciones {
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-
-  .contenedorValoraciones h2 {
-    margin-top: 25px;
-    font-size: 22px;
-  }
-
-  .contenedorValoraciones .valoracion {
-    max-height: 140px;
-  }
-
-  .contenedorValoraciones .valoracion .valoracion__texto p {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1025px) {
-
-  .contenedorValoraciones {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .contenedorValoraciones h2 {
@@ -1071,11 +1125,32 @@ margin-top: 14vh;
   }
 
   .contenedorValoraciones .valoracion {
-    max-height: 150px;
+    max-height: 140px;
   }
 
   .contenedorValoraciones .valoracion .valoracion__texto p {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .contenedorValoraciones {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .contenedorValoraciones h2 {
+    margin-top: 25px;
+    font-size: 28px;
+  }
+
+  .contenedorValoraciones .valoracion {
+    max-height: 150px;
+  }
+
+  .contenedorValoraciones .valoracion .valoracion__texto p {
+    font-size: 22px;
   }
 }
 
@@ -1087,7 +1162,6 @@ margin-top: 14vh;
 
   .containerEspecialidad .bloqueEspecialidad {
     display: grid;
-    grid-area: "descripcion""imagen""imagen""descripacion""descripcion""imagen""imagen""descripacion";
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 10px;
@@ -1100,15 +1174,15 @@ margin-top: 14vh;
   }
 
   .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info li {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__img img {
@@ -1147,7 +1221,6 @@ margin-top: 14vh;
 
   .containerEspecialidad .bloqueEspecialidad {
     display: grid;
-    grid-area: "descripcion""imagen""imagen""descripacion""descripcion""imagen""imagen""descripacion";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
@@ -1159,15 +1232,15 @@ margin-top: 14vh;
   }
 
   .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info p {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__info li {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .containerEspecialidad .bloqueEspecialidad .bloqueEspecialidad__img2 {
@@ -1205,16 +1278,16 @@ margin-top: 14vh;
     margin-right: auto;
   }
 
-  .contenedorCard .cards .cards__info {
+  .containerStaff .contenedorCard .cards .cards__info {
     height: 100%;
   }
 
-  .contenedorCard .cards .cards__info h2 {
+  .containerStaff  .contenedorCard .cards .cards__info h2 {
     font-size: 24px;
   }
 
-  .contenedorCard .cards .cards__info p {
-    font-size: 22px;
+  .containerStaff  .contenedorCard .cards .cards__info p {
+    font-size: 20px;
   }
 
   .styleRow {
@@ -1243,7 +1316,7 @@ margin-top: 14vh;
   }
 
   .containerStaff .contenedorCard .cards .cards__info h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .containerStaff .contenedorCard .cards .cards__info p {
